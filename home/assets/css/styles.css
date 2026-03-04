@@ -1,0 +1,29 @@
+body {
+  & > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    padding-inline: 30px;
+    background-color: white;
+
+    & > li {
+      list-style: none;
+      text-decoration: none;
+      display: flex;
+      flex-direction: row;
+      gap: 2em;
+      font-family: "Fragment Mono", monospace;
+      text-transform: uppercase;
+
+      & > a {
+        cursor: pointer;
+        transition: all ease 0.4s;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
